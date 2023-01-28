@@ -1,0 +1,13 @@
+{
+    "name": "Bikers",
+    "alias": "bikers",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Bikers\\Providers\\BikersServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

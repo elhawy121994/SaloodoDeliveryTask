@@ -1,0 +1,8 @@
+{
+    "Parcels": true,
+    "Infrastructure": true,
+    "Customers": true,
+    "Employees": true,
+    "Bikers": true,
+    "Senders": true
+}

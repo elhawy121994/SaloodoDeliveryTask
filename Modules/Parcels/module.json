@@ -1,0 +1,13 @@
+{
+    "name": "Parcels",
+    "alias": "parcels",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Parcels\\Providers\\ParcelsServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}
