@@ -1,0 +1,13 @@
+{
+    "name": "Senders",
+    "alias": "senders",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Senders\\Providers\\SendersServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}
