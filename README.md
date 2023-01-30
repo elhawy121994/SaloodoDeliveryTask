@@ -75,3 +75,16 @@ http://127.0.0.1:8000/api/v1/bikers/parcels/pick/{id}
 drop off parcel: drop off  specific parcel that sender created
 http://127.0.0.1:8000/api/v1/bikers/parcels/pick/{id}
 
+some screenshot for task 
+api
+![Screenshot from 2023-01-31 01-33-01.png](..%2F..%2F..%2F..%2Fhome%2Fmahmoudelhawy%2FPictures%2FScreenshot%20from%202023-01-31%2001-33-01.png)
+![Screenshot from 2023-01-31 01-32-38.png](..%2F..%2F..%2F..%2Fhome%2Fmahmoudelhawy%2FPictures%2FScreenshot%20from%202023-01-31%2001-32-38.png)
+![Screenshot from 2023-01-31 01-32-23.png](..%2F..%2F..%2F..%2Fhome%2Fmahmoudelhawy%2FPictures%2FScreenshot%20from%202023-01-31%2001-32-23.png)
+![Screenshot from 2023-01-31 01-32-16.png](..%2F..%2F..%2F..%2Fhome%2Fmahmoudelhawy%2FPictures%2FScreenshot%20from%202023-01-31%2001-32-16.png)
+![Screenshot from 2023-01-31 01-32-13.png](..%2F..%2F..%2F..%2Fhome%2Fmahmoudelhawy%2FPictures%2FScreenshot%20from%202023-01-31%2001-32-13.png)
+
+web
+![Screenshot from 2023-01-31 01-24-01.png](..%2F..%2F..%2F..%2Fhome%2Fmahmoudelhawy%2FPictures%2FScreenshot%20from%202023-01-31%2001-24-01.png)
+![Screenshot from 2023-01-31 01-23-45.png](..%2F..%2F..%2F..%2Fhome%2Fmahmoudelhawy%2FPictures%2FScreenshot%20from%202023-01-31%2001-23-45.png)
+![Screenshot from 2023-01-31 01-23-43.png](..%2F..%2F..%2F..%2Fhome%2Fmahmoudelhawy%2FPictures%2FScreenshot%20from%202023-01-31%2001-23-43.png)
+![Screenshot from 2023-01-31 01-23-34.png](..%2F..%2F..%2F..%2Fhome%2Fmahmoudelhawy%2FPictures%2FScreenshot%20from%202023-01-31%2001-23-34.png)
