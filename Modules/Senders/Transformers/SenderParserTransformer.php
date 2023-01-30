@@ -23,8 +23,8 @@ class SenderParserTransformer extends JsonResource
             'status' => $this->status,
             'details' => $this->details,
             'notes' => $this->notes,
-            'created_at' => $this->created_at,
-            'last_update' => $this->updated_at,
+            'created_at' => $this->created_at->toDateTimeString(),
+            'last_update' => $this->updated_at->toDateTimeString(),
         ];
     }
 }

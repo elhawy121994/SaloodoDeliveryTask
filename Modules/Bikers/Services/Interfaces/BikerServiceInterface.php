@@ -8,8 +8,9 @@ use Modules\Parcels\Entities\ParcelPickupDetail;
 
 interface BikerServiceInterface extends BaseServiceInterface
 {
-    public function listParcel(): LengthAwarePaginator;
+    public function listParcelForPick(): LengthAwarePaginator;
 
+    public function listParcelForDropOff(int $bikerId): LengthAwarePaginator;
     public function pickParcel(int $bickerId, int $parcelId, array $pickUpDates): ParcelPickupDetail;
     public function dropOffParcel(int $bickerId, int $parcelId, array $dropOffData): bool;
 }

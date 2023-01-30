@@ -13,4 +13,6 @@ interface ParcelServiceInterface extends BaseServiceInterface
     public function pickParcel(int $bickerId, int $parcelId, array $pickUpData): ParcelPickupDetail;
 
     public function dropOffParcel(int $bickerId, int $parcelId, array $dropOffData): bool;
+
+    public function listParcelForDropOff(int $bikerId): LengthAwarePaginator;
 }

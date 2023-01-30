@@ -4,6 +4,7 @@ namespace Modules\Bikers\Http\Controllers;
 
 use Exception;
 use Illuminate\Http\JsonResponse;
+use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Modules\Bikers\Http\Requests\DropOffParcelRequest;
 use Modules\Bikers\Http\Requests\PickParcelRequest;
@@ -22,7 +23,19 @@ class BikersController extends BaseController
     public function listParcelForPick()
     {
         try {
-            $parsers = $this->service->listParcel();
+            $parsers = $this->service->listParcelForPick();
+
+            return BikerParserTransformer::collection($parsers);
+        } catch (Exception $exception) {
+            return $this->errorResponse(Response::HTTP_INTERNAL_SERVER_ERROR,
+                __('infrastructure::translate.InternalServerError'));
+        }
+    }
+
+    public function listParcelForDropOff()
+    {
+        try {
+            $parsers = $this->service->listParcelForDropOff(auth()->user()->morph_user_id);
 
             return BikerParserTransformer::collection($parsers);
         } catch (Exception $exception) {

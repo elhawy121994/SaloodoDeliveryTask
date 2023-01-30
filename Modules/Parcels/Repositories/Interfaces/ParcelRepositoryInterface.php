@@ -7,4 +7,5 @@ use Modules\Infrastructure\Repositories\Interfaces\BaseRepositoryInterface;
 
 interface ParcelRepositoryInterface extends BaseRepositoryInterface
 {
+    public function listParcelForDropOff(int $bikerId): LengthAwarePaginator;
 }

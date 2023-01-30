@@ -108,7 +108,7 @@ abstract class BaseRepository implements BaseRepositoryInterface
     {
         $this->newQuery()->eagerLoad()->setClauses()->setScopes();
 
-        $models = $this->query->paginate($this->model->getPerPage() ?? 15);
+        $models = $this->query->paginate($this->model->getPerPage() ?? 50);
 
         $this->unsetClauses();
 

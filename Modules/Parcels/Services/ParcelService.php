@@ -73,4 +73,9 @@ class ParcelService  extends BaseService implements ParcelServiceInterface
 
         return !empty($status);
     }
+
+    public function listParcelForDropOff(int $bikerId): LengthAwarePaginator
+    {
+        return $this->repository->listParcelForDropOff($bikerId);
+    }
 }

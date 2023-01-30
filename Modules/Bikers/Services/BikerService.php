@@ -2,12 +2,10 @@
 
 namespace Modules\Bikers\Services;
 
-use Carbon\Carbon;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Modules\Bikers\Services\Interfaces\BikerServiceInterface;
 use Modules\Infrastructure\Services\BaseService;
 use Modules\Parcels\Entities\ParcelPickupDetail;
-use Modules\Parcels\Repositories\Interfaces\ParcelRepositoryInterface;
 use Modules\Parcels\Services\Interfaces\ParcelServiceInterface;
 use Modules\Senders\Repositories\Interfaces\SenderRepositoryInterface;
 
@@ -23,7 +21,7 @@ class BikerService  extends BaseService implements BikerServiceInterface
         $this->parcelService = $parcelService;
     }
 
-    public function listParcel(): LengthAwarePaginator
+    public function listParcelForPick(): LengthAwarePaginator
     {
         return $this->parcelService->listParcelForPick();
     }
@@ -41,5 +39,10 @@ class BikerService  extends BaseService implements BikerServiceInterface
     public function dropOffParcel(int $bickerId, int $parcelId, array $dropOffData): bool
     {
         return $this->parcelService->dropOffParcel($bickerId, $parcelId, $dropOffData);
+    }
+
+    public function listParcelForDropOff(int $bikerId): LengthAwarePaginator
+    {
+        return $this->parcelService->listParcelForDropOff($bikerId);
     }
 }

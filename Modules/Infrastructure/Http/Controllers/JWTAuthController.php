@@ -4,6 +4,7 @@ namespace Modules\Infrastructure\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\JsonResponse;
+use Modules\Senders\Entities\Sender;
 
 class JWTAuthController extends Controller
 {
@@ -45,6 +46,7 @@ class JWTAuthController extends Controller
     {
         return response()->json([
             'access_token' => $token,
+            'type' => auth()->user()->morph_user_type == Sender::class ? 'Sender': 'Biker',
             'token_type' => 'bearer',
             'expires_in' => auth()->factory()->getTTL() * 60*24
         ]);

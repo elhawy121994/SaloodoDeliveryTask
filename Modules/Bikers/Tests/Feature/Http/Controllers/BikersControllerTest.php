@@ -30,7 +30,7 @@ class BikersControllerTest extends TestCase
         $user = User::where('email', 'biker@test.com')->first();
         $token = JWTAuth::fromUser($user);
         $this->actingAs($user);
-        $response = $this->getJson("api/v1/bikers/parcels?token=$token");
+        $response = $this->getJson("api/v1/bikers/parcels/pick?token=$token");
         $response->assertJson(['meta' => ['current_page' => 1, 'per_page' => 15, 'total' => 20]]);
         $response->assertStatus(200)
             ->assertJsonStructure([
